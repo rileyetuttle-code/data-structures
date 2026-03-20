@@ -1,0 +1,18 @@
+1. Expected Output: 
+
+pop: 45
+peek at top: 100
+pop: 12
+pop: 85
+pop: 100
+pop: 23
+pop: 10
+
+2. How many times does the program resize?
+
+The program resizes 3 times, once when it tries the second push to make the size double
+and be size 2. Then on the third push it doubles to become capacity 4. Then on the 6th push after a pop the 6th is the fifth item in the stack so it resizes again to make the size of the stack 8.
+
+3. Time Complexity?
+
+The time complexity is O(n) because of the resizing loop that iterates through the arrays.
