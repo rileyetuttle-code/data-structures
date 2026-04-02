@@ -109,7 +109,7 @@ int main()
     q.DeQueue(x);
     cout<<"\nDeleted Element is ..."<<x <<endl;;
     q.Display();
-    if(q.Find(9,x))
+    if(q.Find(4,x))
         cout<<"\nElement found is..."<<x;//after delete queue elements are 
         //front + 1 that means B,C,D,E
     pos=q.Search('E');
