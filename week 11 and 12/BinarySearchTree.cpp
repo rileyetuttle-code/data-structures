@@ -46,7 +46,7 @@ void BST::Insert(int key)
     while(t != NULL)
     {
         r = t;
-        if (key < t->data)
+        if (key <= t->data)
             t = t->left;
         else if (key > t->data)
             t = t->right;
@@ -59,7 +59,7 @@ void BST::Insert(int key)
     p->left = NULL;
     p->right = NULL;
 
-    if (key < r->data)
+    if (key <= r->data)
         r->left = p;
     else
         r->right = p;
@@ -177,6 +177,8 @@ int main()
     b.Insert(10);
     b.Insert(20);
     b.Insert(70);
+    b.Insert(70);
+    b.Insert(40);
 
     b.Inorder(b.GetRootElement());
     cout << endl;
